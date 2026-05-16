@@ -1,42 +1,164 @@
-
-
-export type Locale = 'ukr' | 'rus' | 'esp';
+export type Locale = 'ukr' | 'rus' | 'esp' | 'est' | 'eng';
 
 export const dictionaries = {
   ukr: {
-    name: "Олександр Майстер",
-    specialty: "Професійна установка кухонь",
-    about: "10 років досвіду. Працюю з будь-якими брендами (IKEA, Leroy Merlin та індивідуальні проекти). Гарантія на кожну збірку.",
+    name: "Бухенко В'ячеслав Сергійович",
+    specialty: ["Професійна установка кухонь/меблів", "20 років бездоганного досвіду"],
     contact: "Зв'язатися зі мною",
-    skills: ["Збірка меблів", "Врізка мийок", "Підключення техніки", "Підсвітка"],
-    footer: "Харків та область • 2026",
-    logo: "Кухні"
+    logo: "Естет Меблів",
+    callNow: "Зателефонувати зараз",
+    diplomaTitle: "Диплом Puustelli",
+    viewWorks: "Переглянути роботи",
+    measurement: "Замовити замір",
+    aboutTitle: "Про мене",
+    factsTitle: "Ключові факти",
+    aboutText: [
+      "Мене звати В'ячеслав Сергійович Бухенко. Я фахівець з більш ніж 20-річним досвідом у проектуванні, виготовленні та професійній установці кухонь.",
+      "Свої перші кроки я зробив в Україні, де заснував власне меблеве виробництво BVS — бренд, що став символом якості та точності в регіоні.",
+      "За роки роботи я реалізував сотні проектів — від невеликих затишних кухонь до масштабних комерційних інтер'єрів. У своїй роботі я завжди приділяю увагу точним замірам, грамотному проектуванню з урахуванням побажань замовника та бездоганному монтажу, де важлива кожна деталь.",
+      "Сьогодні я працюю в Естонії під брендом Mööbli Esteet, пропонуючи повний спектр послуг приватним клієнтам і комерційним замовникам по всій Європі.",
+    ],
+    facts: [
+      { num: '01', title: '20 років досвіду', desc: 'У проектуванні та установці кухонь' },
+      { num: '02', title: 'Власне виробництво', desc: 'Меблевий бренд BVS в Україні' },
+      { num: '03', title: 'Європейські стандарти', desc: 'Робота з провідними німецькими та європейськими марками' },
+      { num: '04', title: 'Диплом Puustelli', desc: 'Сертифікат фінської компанії про підвищення кваліфікації' },
+    ],
+    servicesTitle: "Повний цикл послуг",
+    servicesSubtitle: "Від першого візиту до фінального монтажу — В'ячеслав веде кожен проект особисто",
+    services: [
+      { icon: "ruler-measure", title: "Заміри", desc: "Точні обміри приміщення з урахуванням усіх особливостей і комунікацій" },
+      { icon: "layout-grid", title: "Проектування", desc: "3D-планування та погодження дизайну з урахуванням побажань замовника" },
+      { icon: "armchair", title: "Встановлення", desc: "Професійний монтаж з гарантією якості та дотриманням термінів" },
+    ],
   },
+
   rus: {
-    name: "Александр Мастер",
-    specialty: "Профессиональная установка кухонь",
-    about: "10 лет опыта. Работаю с любыми брендами (IKEA, Leroy Merlin и индивидуальные проекты). Гарантия на каждую сборку.",
+    name: "Бухенко Вячеслав Сергеевич",
+    specialty: ["Профессиональная установка кухонь", "20 лет безупречного опыта"],
     contact: "Связаться со мной",
-    skills: ["Сборка мебели", "Врезка моек", "Подключение техники", "Подсветка"],
-    footer: "Харьков и область • 2026",
-    logo: "Кухни"
+    logo: "Эстет Мебели",
+    callNow: "Позвонить сейчас",
+    diplomaTitle: "Диплом Puustelli",
+    viewWorks: "Посмотреть работы",
+    measurement: "Заказать замер",
+    aboutTitle: "Обо мне",
+    factsTitle: "Ключевые факты",
+    aboutText: [
+      "Меня зовут Вячеслав Сергеевич Бухенко. Я специалист с более чем 20‑летним опытом в проектировании, изготовлении и профессиональной установке кухонь.",
+      "Свои первые шаги я сделал в Украине, где основал собственное мебельное производство BVS — бренд, ставший символом качества и точности в регионе.",
+      "За годы работы я реализовал сотни проектов — от небольших уютных кухонь до масштабных коммерческих интерьеров. В своей работе я всегда уделяю внимание точным замерам, грамотной проектировке с учётом пожеланий заказчика и безупречному монтажу, где важна каждая деталь.",
+      "Сегодня я работаю в Эстонии под брендом Mööbli Esteet, предлагая полный спектр услуг частным клиентам и коммерческим заказчикам по всей Европе.",
+    ],
+    facts: [
+      { num: '01', title: '20 лет опыта', desc: 'В проектировке и установке кухонь' },
+      { num: '02', title: 'Собственное производство', desc: 'Мебельный бренд BVS в Украине' },
+      { num: '03', title: 'Европейские стандарты', desc: 'Работа с ведущими немецкими и европейскими марками' },
+      { num: '04', title: 'Диплом Puustelli', desc: 'Сертификат финской компании о повышении квалификации' },
+    ],
+    servicesTitle: "Полный цикл услуг",
+    servicesSubtitle: "От первого визита до финального монтажа — Вячеслав ведёт каждый проект лично",
+    services: [
+      { icon: "ruler-measure", title: "Замеры", desc: "Точные обмеры помещения с учётом всех особенностей и коммуникаций" },
+      { icon: "layout-grid", title: "Проектировка", desc: "3D-планирование и согласование дизайна с учётом пожеланий заказчика" },
+      { icon: "armchair", title: "Установка", desc: "Профессиональный монтаж с гарантией качества и соблюдением сроков" },
+    ],
   },
-  esp: {
-    name: "Alejandro Maestro",
-    specialty: "Instalación profesional de cocinas",
-    about: "10 años de experiencia. Trabajo con todas las marcas (IKEA, Leroy Merlin y proyectos a medida). Garantía en cada montaje.",
-    contact: "Contactar conmigo",
-    skills: ["Montaje", "Fregaderos", "Electrodomésticos", "Iluminación"],
-    footer: "Járkov y región • 2026",
-    logo: "Cocinas"
+
+  eng: {
+    name: "Viacheslav Bukhenko",
+    specialty: ["Professional kitchen installation", "20 years of excellence"],
+    contact: "Get in touch with me",
+    logo: "Furniture Aesthete",
+    callNow: "Call Now",
+    diplomaTitle: "Puustelli Diploma",
+    viewWorks: "View Portfolio",
+    measurement: "Book a Measurement",
+    aboutTitle: "About me",
+    factsTitle: "Key facts",
+    aboutText: [
+      "My name is Viacheslav Bukhenko. I am a specialist with over 20 years of experience in designing, manufacturing and professionally installing kitchens.",
+      "I started my journey in Ukraine, where I founded my own furniture production brand BVS — a name that became synonymous with quality and precision in the region.",
+      "Over the years I have completed hundreds of projects — from cosy home kitchens to large-scale commercial interiors. I always focus on precise measurements, thoughtful design tailored to the client's wishes, and flawless installation where every detail matters.",
+      "Today I work in Estonia under the brand Mööbli Esteet, offering a full range of services to private clients and commercial customers across Europe.",
+    ],
+    facts: [
+      { num: '01', title: '20 years of experience', desc: 'In kitchen design and installation' },
+      { num: '02', title: 'Own production', desc: 'Furniture brand BVS in Ukraine' },
+      { num: '03', title: 'European standards', desc: 'Working with leading German and European brands' },
+      { num: '04', title: 'Puustelli Diploma', desc: 'Certificate from the Finnish company for professional development' },
+    ],
+    servicesTitle: "Full service cycle",
+    servicesSubtitle: "From the first visit to the final installation — Viacheslav manages every project personally",
+    services: [
+      { icon: "ruler-measure", title: "Measurements", desc: "Precise room measurements covering all structural features and utilities" },
+      { icon: "layout-grid", title: "Design", desc: "3D planning and design approval tailored to the client's wishes" },
+      { icon: "armchair", title: "Installation", desc: "Professional fitting with a quality guarantee and on-time delivery" },
+    ],
   },
+
   est: {
-    name: "Aleksander Meister",
-    specialty: "Professionaalne köökide paigaldus",
-    about: "10 aastat kogemust. Töötame kõikide kaubamärkidega (IKEA, Leroy Merlin ja eritellimusprojektid). Garantii igale paigaldusele.",
+    name: "Viacheslav Bukhenko",
+    specialty: ["Professionaalne köökide paigaldus", "20 aastat laitmatut kogemust"],
     contact: "Võta minuga ühendust",
-    skills: ["Mööbli kokkupanek", "Valamute paigaldus", "Tehnika ühendamine", "Valgustus"],
-    footer: "Harkiv ja piirkond • 2026",
-    logo: "Köögid"
-  }
+    logo: "Mööbli Esteet",
+    callNow: "Helista kohe",
+    diplomaTitle: "Puustelli diplom",
+    viewWorks: "Vaata tehtud töid",
+    measurement: "Telli mõõdistamine",
+    aboutTitle: "Minust",
+    factsTitle: "Põhifaktid",
+    aboutText: [
+      "Minu nimi on Viacheslav Bukhenko. Olen spetsialist, kellel on üle 20-aastane kogemus köökide projekteerimisel, tootmisel ja professionaalsel paigaldamisel.",
+      "Alustasin oma teekonda Ukrainas, kus asusin oma mööblitootmist BVS — bränd, mis sai piirkonnas kvaliteedi ja täpsuse sümboliks.",
+      "Aastate jooksul olen ellu viinud sadu projekte — väikestest hubasttest köökidest kuni suuremahuliste äriruumideni. Panen alati rõhku täpsetele mõõtmistele, läbimõeldud projekteerimisele vastavalt kliendi soovile ja laitmatu paigaldusele, kus iga detail loeb.",
+      "Täna tegutseb Eestis brändi Mööbli Esteet all, pakkudes täisteenust eraisikutele ja äriklientidele üle kogu Euroopa.",
+    ],
+    facts: [
+      { num: '01', title: '20 aastat kogemust', desc: 'Köökide projekteerimisel ja paigaldamisel' },
+      { num: '02', title: 'Oma tootmine', desc: 'Mööblimark BVS Ukrainas' },
+      { num: '03', title: 'Euroopa standardid', desc: 'Töö juhtivate Saksa ja Euroopa markidega' },
+      { num: '04', title: 'Puustelli diplom', desc: 'Soome ettevõtte sertifikaat erialase arengu kohta' },
+    ],
+    servicesTitle: "Täielik teenuste tsükkel",
+    servicesSubtitle: "Esimesest külastusest lõpliku paigalduseni — Viacheslav juhib iga projekti isiklikult",
+    services: [
+      { icon: "ruler-measure", title: "Mõõtmised", desc: "Täpsed ruumimõõtmised kõigi eripärade ja kommunikatsioonide arvestusega" },
+      { icon: "layout-grid", title: "Projekteerimine", desc: "3D-planeerimine ja disaini kooskõlastamine vastavalt kliendi soovile" },
+      { icon: "armchair", title: "Paigaldus", desc: "Professionaalne paigaldus kvaliteedigarantiiga ja tähtaegade järgimisega" },
+    ],
+
+  },
+
+  esp: {
+    name: "Viacheslav Bukhenko",
+    specialty: ["Instalación profesional de cocinas", "20 años de experiencia impecable"],
+    contact: "Contactar conmigo",
+    logo: "Esteta Del Mueble",
+    callNow: "Llamar ahora",
+    diplomaTitle: "Diploma Puustelli",
+    viewWorks: "Ver trabajos",
+    measurement: "Solicitar medida",
+    aboutTitle: "Sobre mí",
+    factsTitle: "Datos clave",
+    aboutText: [
+      "Me llamo Viacheslav Bukhenko. Soy especialista con más de 20 años de experiencia en diseño, fabricación e instalación profesional de cocinas.",
+      "Comencé mi trayectoria en Ucrania, donde fundé mi propia producción de muebles BVS — una marca que se convirtió en sinónimo de calidad y precisión en la región.",
+      "A lo largo de los años he realizado cientos de proyectos — desde acogedoras cocinas domésticas hasta grandes interiores comerciales. Siempre presto especial atención a las mediciones exactas, el diseño adaptado a los deseos del cliente y una instalación impecable donde cada detalle importa.",
+      "Hoy trabajo en Estonia bajo la marca Mööbli Esteet, ofreciendo una gama completa de servicios a clientes privados y empresas de toda Europa.",
+    ],
+    facts: [
+      { num: '01', title: '20 años de experiencia', desc: 'En diseño e instalación de cocinas' },
+      { num: '02', title: 'Producción propia', desc: 'Marca de muebles BVS en Ucrania' },
+      { num: '03', title: 'Estándares europeos', desc: 'Trabajo con las principales marcas alemanas y europeas' },
+      { num: '04', title: 'Diploma Puustelli', desc: 'Certificado de la empresa finlandesa para el desarrollo profesional' },
+    ],
+    servicesTitle: "Ciclo completo de servicios",
+    servicesSubtitle: "Desde la primera visita hasta la instalación final — Viacheslav gestiona cada proyecto personalmente",
+    services: [
+      { icon: "ruler-measure", title: "Medición", desc: "Medidas precisas del espacio teniendo en cuenta todas las particularidades y suministros" },
+      { icon: "layout-grid", title: "Diseño", desc: "Planificación 3D y aprobación del diseño adaptado a los deseos del cliente" },
+      { icon: "armchair", title: "Instalación", desc: "Montaje profesional con garantía de calidad y cumplimiento de plazos" },
+    ],
+  },
 };

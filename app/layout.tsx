@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KitchenPro — Установка кухонь",
+  title: "Furniture Aesthete — Установка кухонь",
   description: "Профессиональная сборка и установка кухонь любой сложности",
 };
 
@@ -27,9 +27,16 @@ export default function RootLayout({
     <html 
       lang="en" 
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-      suppressHydrationWarning // Важно для корректной работы тем
+      suppressHydrationWarning 
     >
-      <body className="min-h-full flex flex-col bg-white dark:bg-slate-950 transition-colors duration-300">
+      <head>
+      <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          crossOrigin="anonymous" 
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-white dark:var(--bg-main) transition-colors duration-300">
         <Providers>
           {children}
         </Providers>
