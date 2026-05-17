@@ -1,19 +1,21 @@
 export type Locale = 'ukr' | 'rus' | 'esp' | 'est' | 'eng';
 
 export const dictionaries = {
+
+  // Ukrainian LANG
   ukr: {
     name: "Бухенко В'ячеслав Сергійович",
     specialty: ["Професійна установка кухонь/меблів", "20 років бездоганного досвіду"],
     contact: "Зв'язатися зі мною",
     logo: "Естет Меблів",
-    callNow: "Зателефонувати зараз",
+    callNow: "Зв'язатися",
     diplomaTitle: "Диплом Puustelli",
     viewWorks: "Переглянути роботи",
     measurement: "Замовити замір",
     aboutTitle: "Про мене",
     factsTitle: "Ключові факти",
     aboutText: [
-      "Мене звати В'ячеслав Сергійович Бухенко. Я фахівець з більш ніж 20-річним досвідом у проектуванні, виготовленні та професійній установці кухонь.",
+      "Мене звати Бухенко В'ячеслав Сергійович . Я фахівець з більш ніж 20-річним досвідом у проектуванні, виготовленні та професійній установці кухонь.",
       "Свої перші кроки я зробив в Україні, де заснував власне меблеве виробництво BVS — бренд, що став символом якості та точності в регіоні.",
       "За роки роботи я реалізував сотні проектів — від невеликих затишних кухонь до масштабних комерційних інтер'єрів. У своїй роботі я завжди приділяю увагу точним замірам, грамотному проектуванню з урахуванням побажань замовника та бездоганному монтажу, де важлива кожна деталь.",
       "Сьогодні я працюю в Естонії під брендом Mööbli Esteet, пропонуючи повний спектр послуг приватним клієнтам і комерційним замовникам по всій Європі.",
@@ -25,7 +27,7 @@ export const dictionaries = {
       { num: '04', title: 'Диплом Puustelli', desc: 'Сертифікат фінської компанії про підвищення кваліфікації' },
     ],
     servicesTitle: "Повний цикл послуг",
-    servicesSubtitle: "Від першого візиту до фінального монтажу — В'ячеслав веде кожен проект особисто",
+    servicesSubtitle: "Від першого візиту до фінального монтажу — я веду кожен проект особисто",
     services: [
       { icon: "ruler-measure", title: "Заміри", desc: "Точні обміри приміщення з урахуванням усіх особливостей і комунікацій" },
       { icon: "layout-grid", title: "Проектування", desc: "3D-планування та погодження дизайну з урахуванням побажань замовника" },
@@ -47,21 +49,60 @@ export const dictionaries = {
         desc: "У рамках діяльності компанії <strong>Mööbli Esteet</strong> в Естонії В'ячеслав спеціалізується на професійному складанні та встановленні кухонь IKEA — з гарантованою якістю та акуратністю.",
       },
     ],
+    certTitle: "Сертифікація та професійний розвиток",
+    certSubtitle: "Фінська компанія Puustelli",
+    certText: [
+      "Я є власником офіційного диплому фінської компанії Puustelli — одного з найбільш шанованих виробників кухонних меблів у Скандинавії. Сертифікат підтверджує проходження спеціалізованого курсу підвищення кваліфікації з проектування та монтажу кухонних систем.",
+      "Puustelli відома своїм інноваційним підходом до виробництва екологічно чистих меблів та суворими стандартами якості. Навчання у цього виробника — свідчення моєї професійної серйозності та постійного прагнення до досконалості.",
+    ],
+    bvsTitle: "Власне виробництво BVS, Україна",
+    bvsText: [
+      "До переїзду до Європи я заснував і успішно розвивав власне меблеве виробництво під брендом <strong>BVS</strong> в Україні. Це дозволило мені глибоко зрозуміти весь цикл створення кухонних меблів — від розробки конструкції до фінального складання у клієнта.",
+      "Досвід власника виробництва сформував унікальне розуміння матеріалів, фурнітури та технологій монтажу, яке я застосовую в кожному європейському проекті. Я знаю кухні не лише як монтажник, а й як людина, що створювала їх з нуля.",
+    ],
+    bvsCards: [
+      { title: "Повний цикл виробництва", desc: "Від проектування до готового виробу" },
+      { title: "Контроль якості", desc: "Особистий нагляд на кожному етапі" },
+      { title: "Авторські рішення", desc: "Нестандартні конфігурації на замовлення" },
+    ],
+    esteetCards: [
+      { title: "Приватні клієнти", desc: "Повна установка кухонь під ключ — від заміру до фінального монтажу. Індивідуальний підхід до кожного проекту." },
+      { title: "Комерційні замовлення", desc: "Оснащення офісів, кафе, готелів і орендного житла. Дотримання термінів і робота з об'єктами будь-якої складності." },
+      { title: "Збірка IKEA", desc: "Професійна збірка та встановлення кухонь IKEA з правильним підганянням, вирівнюванням і підключенням." },
+      { title: "Інші бренди", desc: "Монтаж кухонь від різних європейських виробників і постачальників. Гнучкість і досвід — головні переваги." },
+    ],
+    tiktokTitle: "Слідкуйте за роботами у TikTok",
+    tiktokText: [
+      "Я регулярно публікую відео про процес встановлення кухонь, лайфхаки з монтажу, огляди матеріалів і фурнітури. Це чесний погляд професіонала на те, як створюються якісні кухні — без прикрас і рекламних кліше.",
+      "Підпишіться, щоб спостерігати за реальними проектами, дізнаватися про тонкощі професії та надихатися готовими роботами. Хочете бачити, як народжується ваша майбутня кухня? Починайте тут.",
+    ],
+    tiktokBtn: "Дивитися у TikTok",
+    ctaTitle: "Готові обговорити ваш проект?",
+    ctaBtn: "Замовити замір",
+    ctaModalTitle: "Оберіть спосіб зв'язку",
+    ctaModalClose: "Закрити",
+    ctaCards: [
+      { title: "Безкоштовний замір", desc: "Виїзд на об'єкт і точні обміри без зобов'язань" },
+      { title: "Індивідуальний проект", desc: "Розробка дизайну під ваші побажання та бюджет" },
+      { title: "Гарантія якості", desc: "20 років досвіду та європейські стандарти монтажу" },
+    ],
   },
+
+  // RUSSIAN LANG
 
   rus: {
     name: "Бухенко Вячеслав Сергеевич",
     specialty: ["Профессиональная установка кухонь", "20 лет безупречного опыта"],
     contact: "Связаться со мной",
     logo: "Эстет Мебели",
-    callNow: "Позвонить сейчас",
+    callNow: "Связаться",
     diplomaTitle: "Диплом Puustelli",
     viewWorks: "Посмотреть работы",
     measurement: "Заказать замер",
     aboutTitle: "Обо мне",
     factsTitle: "Ключевые факты",
     aboutText: [
-      "Меня зовут Вячеслав Сергеевич Бухенко. Я специалист с более чем 20‑летним опытом в проектировании, изготовлении и профессиональной установке кухонь.",
+      "Меня зовут Бухенко Вячеслав Сергеевич. Я специалист с более чем 20‑летним опытом в проектировании, изготовлении и профессиональной установке кухонь.",
       "Свои первые шаги я сделал в Украине, где основал собственное мебельное производство BVS — бренд, ставший символом качества и точности в регионе.",
       "За годы работы я реализовал сотни проектов — от небольших уютных кухонь до масштабных коммерческих интерьеров. В своей работе я всегда уделяю внимание точным замерам, грамотной проектировке с учётом пожеланий заказчика и безупречному монтажу, где важна каждая деталь.",
       "Сегодня я работаю в Эстонии под брендом Mööbli Esteet, предлагая полный спектр услуг частным клиентам и коммерческим заказчикам по всей Европе.",
@@ -73,7 +114,7 @@ export const dictionaries = {
       { num: '04', title: 'Диплом Puustelli', desc: 'Сертификат финской компании о повышении квалификации' },
     ],
     servicesTitle: "Полный цикл услуг",
-    servicesSubtitle: "От первого визита до финального монтажа — Вячеслав ведёт каждый проект лично",
+    servicesSubtitle: "От первого визита до финального монтажа — я веду каждый проект лично",
     services: [
       { icon: "ruler-measure", title: "Замеры", desc: "Точные обмеры помещения с учётом всех особенностей и коммуникаций" },
       { icon: "layout-grid", title: "Проектировка", desc: "3D-планирование и согласование дизайна с учётом пожеланий заказчика" },
@@ -95,14 +136,52 @@ export const dictionaries = {
         desc: "В рамках деятельности компании <strong>Mööbli Esteet</strong> в Эстонии Вячеслав специализируется на профессиональной сборке и установке кухонь IKEA — с гарантированным качеством и аккуратностью.",
       },
     ],
+    certTitle: "Сертификация и профессиональное развитие",
+    certSubtitle: "Финская компания Puustelli",
+    certText: [
+      "Я являюсь обладателем официального диплома финской компании Puustelli — одного из наиболее уважаемых производителей кухонной мебели в Скандинавии. Сертификат подтверждает прохождение специализированного курса повышения квалификации по проектировке и монтажу кухонных систем.",
+      "Puustelli известна своим инновационным подходом к производству экологически чистой мебели и строгими стандартами качества. Обучение у этого производителя — свидетельство моей профессиональной серьёзности и постоянного стремления к совершенству.",
+    ],
+    bvsTitle: "Собственное производство BVS, Украина",
+    bvsText: [
+      "До переезда в Европу я основал и успешно развивал собственное мебельное производство под брендом <strong>BVS</strong> в Украине. Это позволило мне глубоко понять весь цикл создания кухонной мебели — от разработки конструкции до финальной сборки у клиента.",
+      "Опыт владельца производства сформировал уникальное понимание материалов, фурнитуры и технологий монтажа, которое я применяю в каждом европейском проекте. Я знаю кухни не только как установщик, но и как человек, создававший их с нуля.",
+    ],
+    bvsCards: [
+      { title: "Полный цикл производства", desc: "От проектирования до готового изделия" },
+      { title: "Контроль качества", desc: "Личный надзор на каждом этапе" },
+      { title: "Авторские решения", desc: "Нестандартные конфигурации под заказ" },
+    ],
+    esteetCards: [
+      { title: "Частные клиенты", desc: "Полная установка кухонь под ключ — от замера до финального монтажа. Индивидуальный подход к каждому проекту." },
+      { title: "Коммерческие заказы", desc: "Оснащение офисов, кафе, отелей и арендного жилья. Соблюдение сроков и работа с объектами любой сложности." },
+      { title: "Сборка IKEA", desc: "Профессиональная сборка и установка кухонь IKEA с правильной подгонкой, выравниванием и подключением." },
+      { title: "Другие бренды", desc: "Монтаж кухонь от различных европейских производителей и поставщиков. Гибкость и опыт — главные преимущества." },
+    ],
+    tiktokTitle: "Следите за работами в TikTok",
+    tiktokText: [
+      "Я регулярно публикую видео о процессе установки кухонь, лайфхаки по монтажу, обзоры материалов и фурнитуры. Это честный взгляд профессионала на то, как создаются качественные кухни — без прикрас и рекламных клише.",
+      "Подпишитесь, чтобы наблюдать за реальными проектами, узнавать о тонкостях профессии и вдохновляться готовыми работами. Хотите видеть, как рождается ваша будущая кухня? Начните здесь.",
+    ],
+    tiktokBtn: "Смотреть на TikTok",
+    ctaTitle: "Готовы обсудить ваш проект?",
+    ctaBtn: "Заказать замер",
+    ctaModalTitle: "Выберите способ связи",
+    ctaModalClose: "Закрыть",
+    ctaCards: [
+      { title: "Бесплатный замер", desc: "Выезд на объект и точные обмеры без обязательств" },
+      { title: "Индивидуальный проект", desc: "Разработка дизайна под ваши пожелания и бюджет" },
+      { title: "Гарантия качества", desc: "20 лет опыта и европейские стандарты монтажа" },
+    ],
   },
 
+  // English LANG
   eng: {
     name: "Viacheslav Bukhenko",
     specialty: ["Professional kitchen installation", "20 years of excellence"],
     contact: "Get in touch with me",
     logo: "Furniture Aesthete",
-    callNow: "Call Now",
+    callNow: "Contact",
     diplomaTitle: "Puustelli Diploma",
     viewWorks: "View Portfolio",
     measurement: "Book a Measurement",
@@ -121,7 +200,7 @@ export const dictionaries = {
       { num: '04', title: 'Puustelli Diploma', desc: 'Certificate from the Finnish company for professional development' },
     ],
     servicesTitle: "Full service cycle",
-    servicesSubtitle: "From the first visit to the final installation — Viacheslav manages every project personally",
+    servicesSubtitle: "From the first visit to the final installation — I manage every project personally",
     services: [
       { icon: "ruler-measure", title: "Measurements", desc: "Precise room measurements covering all structural features and utilities" },
       { icon: "layout-grid", title: "Design", desc: "3D planning and design approval tailored to the client's wishes" },
@@ -143,14 +222,52 @@ export const dictionaries = {
         desc: "Under the <strong>Mööbli Esteet</strong> brand in Estonia, Viacheslav specialises in the professional assembly and installation of IKEA kitchens — with guaranteed quality and precision.",
       },
     ],
+    certTitle: "Certification & Professional Development",
+    certSubtitle: "Finnish company Puustelli",
+    certText: [
+      "I hold an official diploma from the Finnish company Puustelli — one of the most respected kitchen furniture manufacturers in Scandinavia. The certificate confirms the completion of a specialised advanced training course in kitchen system design and installation.",
+      "Puustelli is known for its innovative approach to eco-friendly furniture production and its strict quality standards. Training with this manufacturer is a testament to my professional commitment and constant pursuit of excellence.",
+    ],
+    bvsTitle: "Own Production BVS, Ukraine",
+    bvsText: [
+      "Before moving to Europe, I founded and successfully ran my own furniture production under the brand <strong>BVS</strong> in Ukraine. This gave me a deep understanding of the full cycle of kitchen furniture creation — from structural design to final assembly at the client's home.",
+      "The experience of running a production business gave me a unique insight into materials, hardware and installation technologies — knowledge I bring to every project in Europe. I know kitchens not only as an installer, but as someone who built them from scratch.",
+    ],
+    bvsCards: [
+      { title: "Full production cycle", desc: "From design to finished product" },
+      { title: "Quality control", desc: "Personal oversight at every stage" },
+      { title: "Custom solutions", desc: "Non-standard configurations made to order" },
+    ],
+    esteetCards: [
+      { title: "Private clients", desc: "Full turnkey kitchen installation — from measurement to final fitting. Individual approach to every project." },
+      { title: "Commercial orders", desc: "Equipping offices, cafés, hotels and rental properties. On-time delivery and work on projects of any complexity." },
+      { title: "IKEA assembly", desc: "Professional assembly and installation of IKEA kitchens with correct fitting, levelling and connection." },
+      { title: "Other brands", desc: "Installation of kitchens from various European manufacturers and suppliers. Flexibility and experience are the key advantages." },
+    ],
+    tiktokTitle: "Follow my work on TikTok",
+    tiktokText: [
+      "I regularly post videos about the kitchen installation process, fitting tips, and reviews of materials and hardware. It's an honest professional's view of how quality kitchens are made — no fluff, no advertising clichés.",
+      "Subscribe to follow real projects, learn the nuances of the craft and get inspired by finished work. Want to see how your future kitchen comes to life? Start here.",
+    ],
+    tiktokBtn: "Watch on TikTok",
+    ctaTitle: "Ready to discuss your project?",
+    ctaBtn: "Book a Measurement",
+    ctaModalTitle: "Choose how to reach me",
+    ctaModalClose: "Close",
+    ctaCards: [
+      { title: "Free measurement", desc: "On-site visit and precise measurements with no obligations" },
+      { title: "Custom project", desc: "Design tailored to your wishes and budget" },
+      { title: "Quality guarantee", desc: "20 years of experience and European installation standards" },
+    ],
   },
 
+  // Estonian LANG
   est: {
     name: "Viacheslav Bukhenko",
     specialty: ["Professionaalne köökide paigaldus", "20 aastat laitmatut kogemust"],
     contact: "Võta minuga ühendust",
     logo: "Mööbli Esteet",
-    callNow: "Helista kohe",
+    callNow: "Võta ühendust",
     diplomaTitle: "Puustelli diplom",
     viewWorks: "Vaata tehtud töid",
     measurement: "Telli mõõdistamine",
@@ -169,7 +286,7 @@ export const dictionaries = {
       { num: '04', title: 'Puustelli diplom', desc: 'Soome ettevõtte sertifikaat erialase arengu kohta' },
     ],
     servicesTitle: "Täielik teenuste tsükkel",
-    servicesSubtitle: "Esimesest külastusest lõpliku paigalduseni — Viacheslav juhib iga projekti isiklikult",
+    servicesSubtitle: "Esimesest külastusest lõpliku paigalduseni — juhin iga projekti isiklikult",
     services: [
       { icon: "ruler-measure", title: "Mõõtmised", desc: "Täpsed ruumimõõtmised kõigi eripärade ja kommunikatsioonide arvestusega" },
       { icon: "layout-grid", title: "Projekteerimine", desc: "3D-planeerimine ja disaini kooskõlastamine vastavalt kliendi soovile" },
@@ -191,15 +308,52 @@ export const dictionaries = {
         desc: "Ettevõtte <strong>Mööbli Esteet</strong> raames Eestis spetsialiseerub Viacheslav IKEA köökide professionaalsele kokkupanekule ja paigaldamisele — garanteeritud kvaliteedi ja täpsusega.",
       },
     ],
-
+    certTitle: "Sertifitseerimine ja professionaalne areng",
+    certSubtitle: "Soome ettevõte Puustelli",
+    certText: [
+      "Oman Soome ettevõtte Puustelli ametlikku diplomit — ühe Skandinaavia hinnatuima köögimööbli tootja tunnistust. Sertifikaat kinnitab spetsialiseeritud täiendkoolituse läbimist köögisüsteemide projekteerimise ja paigaldamise alal.",
+      "Puustelli on tuntud oma innovaatilise lähenemise poolest keskkonnasõbraliku mööbli tootmisele ning rangete kvaliteedistandardite poolest. Selle tootja juures õppimine näitab minu professionaalset tõsidust ja pidevat püüdlust täiuslikkuse poole.",
+    ],
+    bvsTitle: "Oma tootmine BVS, Ukraina",
+    bvsText: [
+      "Enne Euroopasse kolimist asusin ja arendasin edukalt oma mööblitootmist brändi <strong>BVS</strong> all Ukrainas. See võimaldas mul põhjalikult mõista kogu köögimööbli loomise tsüklit — konstruktsiooni väljatöötamisest kuni lõpliku kokkupanekuni kliendi juures.",
+      "Tootmisettevõtte omaniku kogemus kujundas ainulaadse arusaama materjalidest, furnituurist ja paigaldustehnoloogiatest, mida rakendan igas Euroopa projektis. Tean köögimööblit mitte ainult paigaldajana, vaid ka inimesena, kes on neid nullist loonud.",
+    ],
+    bvsCards: [
+      { title: "Täielik tootmistsükkel", desc: "Projekteerimisest valmistoodanguni" },
+      { title: "Kvaliteedikontroll", desc: "Isiklik järelevalve igal etapil" },
+      { title: "Autorlahendused", desc: "Mittestandardsed konfiguratsioonid tellimuse järgi" },
+    ],
+    esteetCards: [
+      { title: "Eraisikud", desc: "Täielik köögimööbli paigaldus võtmed kätte — mõõtmistest lõpliku montaažini. Individuaalne lähenemine igale projektile." },
+      { title: "Äritelliimused", desc: "Kontorite, kohvikute, hotellide ja üürikorterite sisustamine. Tähtaegade järgimine ja töö ükskõik millise keerukusega objektidel." },
+      { title: "IKEA kokkupanek", desc: "Professionaalne IKEA köökide kokkupanek ja paigaldus õige sobitamise, tasandamise ja ühendamisega." },
+      { title: "Muud brändid", desc: "Erinevate Euroopa tootjate ja tarnijate köökide paigaldus. Paindlikkus ja kogemus on peamised eelised." },
+    ],
+    tiktokTitle: "Jälgi minu töid TikTokis",
+    tiktokText: [
+      "Avaldan regulaarselt videoid köögimööbli paigaldamise protsessist, montaaži näpunäiteid ning materjali- ja furnituuriülevaateid. See on professionaali aus pilk sellele, kuidas luuakse kvaliteetseid köögimööbleid — ilma ilustamata.",
+      "Telli, et jälgida reaalseid projekte, õppida eriala peensusi ja inspireeruda valmistehtud töödest. Tahad näha, kuidas sinu tulevane köök sünnib? Alusta siit.",
+    ],
+    tiktokBtn: "Vaata TikTokis",
+    ctaTitle: "Valmis oma projekti arutama?",
+    ctaBtn: "Telli mõõdistamine",
+    ctaModalTitle: "Valige ühendusviis",
+    ctaModalClose: "Sulge",
+    ctaCards: [
+      { title: "Tasuta mõõdistamine", desc: "Kohaletulek ja täpsed mõõtmised ilma kohustuseta" },
+      { title: "Individuaalne projekt", desc: "Disain vastavalt teie soovidele ja eelarvele" },
+      { title: "Kvaliteedigarantii", desc: "20 aastat kogemust ja Euroopa paigaldusstandardid" },
+    ],
   },
 
+  // Espanola LANG
   esp: {
     name: "Viacheslav Bukhenko",
     specialty: ["Instalación profesional de cocinas", "20 años de experiencia impecable"],
     contact: "Contactar conmigo",
     logo: "Esteta Del Mueble",
-    callNow: "Llamar ahora",
+    callNow: "Contactar",
     diplomaTitle: "Diploma Puustelli",
     viewWorks: "Ver trabajos",
     measurement: "Solicitar medida",
@@ -218,7 +372,7 @@ export const dictionaries = {
       { num: '04', title: 'Diploma Puustelli', desc: 'Certificado de la empresa finlandesa para el desarrollo profesional' },
     ],
     servicesTitle: "Ciclo completo de servicios",
-    servicesSubtitle: "Desde la primera visita hasta la instalación final — Viacheslav gestiona cada proyecto personalmente",
+    servicesSubtitle: "Desde la primera visita hasta la instalación final — gestiono cada proyecto personalmente",
     services: [
       { icon: "ruler-measure", title: "Medición", desc: "Medidas precisas del espacio teniendo en cuenta todas las particularidades y suministros" },
       { icon: "layout-grid", title: "Diseño", desc: "Planificación 3D y aprobación del diseño adaptado a los deseos del cliente" },
@@ -239,6 +393,43 @@ export const dictionaries = {
         name: "IKEA",
         desc: "En el marco de la actividad de <strong>Mööbli Esteet</strong> en Estonia, Viacheslav se especializa en el montaje e instalación profesional de cocinas IKEA, con calidad garantizada y máxima precisión.",
       },
-    ]
-  },
+    ],
+    certTitle: "Certificación y desarrollo profesional",
+    certSubtitle: "Empresa finlandesa Puustelli",
+    certText: [
+      "Soy titular del diploma oficial de la empresa finlandesa Puustelli — uno de los fabricantes de muebles de cocina más respetados de Escandinavia. El certificado acredita la finalización de un curso especializado de formación avanzada en diseño e instalación de sistemas de cocina.",
+      "Puustelli es conocida por su enfoque innovador en la fabricación de muebles ecológicos y sus estrictos estándares de calidad. Haber recibido formación de este fabricante es un reflejo de mi seriedad profesional y mi constante búsqueda de la excelencia.",
+    ],
+    bvsTitle: "Producción propia BVS, Ucrania",
+    bvsText: [
+      "Antes de trasladarme a Europa, fundé y desarrollé con éxito mi propia producción de muebles bajo la marca <strong>BVS</strong> en Ucrania. Esto me permitió comprender en profundidad todo el ciclo de creación de muebles de cocina — desde el diseño estructural hasta el montaje final en casa del cliente.",
+      "La experiencia como propietario de una empresa de producción me aportó un conocimiento único sobre materiales, herrajes y tecnologías de instalación que aplico en cada proyecto europeo. Conozco las cocinas no solo como instalador, sino como alguien que las ha creado desde cero.",
+    ],
+    bvsCards: [
+      { title: "Ciclo de producción completo", desc: "Del diseño al producto terminado" },
+      { title: "Control de calidad", desc: "Supervisión personal en cada etapa" },
+      { title: "Soluciones personalizadas", desc: "Configuraciones no estándar bajo pedido" },
+    ],
+    esteetCards: [
+      { title: "Clientes particulares", desc: "Instalación completa de cocinas llave en mano — desde la medición hasta el montaje final. Enfoque individual en cada proyecto." },
+      { title: "Pedidos comerciales", desc: "Equipamiento de oficinas, cafés, hoteles y viviendas de alquiler. Cumplimiento de plazos y trabajo con objetos de cualquier complejidad." },
+      { title: "Montaje IKEA", desc: "Montaje e instalación profesional de cocinas IKEA con ajuste, nivelación y conexión correctos." },
+      { title: "Otras marcas", desc: "Instalación de cocinas de diversos fabricantes y proveedores europeos. La flexibilidad y la experiencia son las principales ventajas." },
+    ],
+    tiktokTitle: "Sigue mis trabajos en TikTok",
+    tiktokText: [
+      "Publico regularmente vídeos sobre el proceso de instalación de cocinas, trucos de montaje y reseñas de materiales y herrajes. Es la visión honesta de un profesional sobre cómo se crean cocinas de calidad — sin adornos ni clichés publicitarios.",
+      "Suscríbete para seguir proyectos reales, aprender los matices del oficio e inspirarte con los trabajos terminados. ¿Quieres ver cómo nace tu futura cocina? Empieza aquí.",
+    ],
+    tiktokBtn: "Ver en TikTok",
+    ctaTitle: "¿Listo para hablar de tu proyecto?",
+    ctaBtn: "Solicitar medida",
+    ctaModalTitle: "Elige cómo contactarme",
+    ctaModalClose: "Cerrar",
+    ctaCards: [
+      { title: "Medición gratuita", desc: "Visita al lugar y medidas precisas sin compromiso" },
+      { title: "Proyecto individual", desc: "Diseño adaptado a tus deseos y presupuesto" },
+      { title: "Garantía de calidad", desc: "20 años de experiencia y estándares europeos de instalación" },
+    ],
+  }
 };

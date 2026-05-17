@@ -5,6 +5,8 @@
   --bg-main: #d8d4d49c;
   --bg-second: #fff;
   --bg-overlay: #ffffffd9;
+  --bg-action: #1b1b1b;
+  --text-action: #fff;
   --text-main: #0f172a;
   --action-gradient: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
   --action-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
@@ -12,9 +14,11 @@
 }
 
 :root.dark {
-  --bg-main: linear-gradient(88deg, rgba(64, 61, 61, 1) 0%, rgba(115, 115, 111, 1) 100%);
+  --bg-main: #2a2a2a;
   --bg-second: #1b1b1b;
   --bg-overlay: #000000d9;
+  --bg-action: #fff;
+  --text-action: #1b1b1b;
   --text-main: #f8fafc;
   --action-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   --action-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
@@ -165,4 +169,10 @@ body {
 }
 .social_network li:nth-child(5) a:before {
   background: #25D366;
+}
+
+
+.css-vptvdy {
+  width: 100%; 
+  max-width: fit-content;
 }
