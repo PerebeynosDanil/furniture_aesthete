@@ -31,6 +31,22 @@ export const dictionaries = {
       { icon: "layout-grid", title: "Проектування", desc: "3D-планування та погодження дизайну з урахуванням побажань замовника" },
       { icon: "armchair", title: "Встановлення", desc: "Професійний монтаж з гарантією якості та дотриманням термінів" },
     ],
+    brandsTitle: "Досвід роботи з європейськими брендами",
+    brandsSubtitle: "В'ячеслав співпрацював з провідними німецькими торговими мережами та встановлював кухні преміальних марок",
+    brands: [
+      {
+        name: "Nobilia",
+        desc: "Одна з найбільших німецьких фабрик кухонних меблів. В'ячеслав пройшов професійну підготовку з монтажу та встановив десятки кухонь цієї марки через магазини-партнери в Німеччині.",
+      },
+      {
+        name: "Express Küchen",
+        desc: "Німецький бренд доступних і функціональних кухонь. Встановлення через великі торгові мережі дозволило В'ячеславу накопити багатий досвід роботи з різними конфігураціями та плануваннями.",
+      },
+      {
+        name: "IKEA",
+        desc: "У рамках діяльності компанії <strong>Mööbli Esteet</strong> в Естонії В'ячеслав спеціалізується на професійному складанні та встановленні кухонь IKEA — з гарантованою якістю та акуратністю.",
+      },
+    ],
   },
 
   rus: {
@@ -62,6 +78,22 @@ export const dictionaries = {
       { icon: "ruler-measure", title: "Замеры", desc: "Точные обмеры помещения с учётом всех особенностей и коммуникаций" },
       { icon: "layout-grid", title: "Проектировка", desc: "3D-планирование и согласование дизайна с учётом пожеланий заказчика" },
       { icon: "armchair", title: "Установка", desc: "Профессиональный монтаж с гарантией качества и соблюдением сроков" },
+    ],
+    brandsTitle: "Опыт работы с европейскими брендами",
+    brandsSubtitle: "Вячеслав сотрудничал с ведущими немецкими торговыми сетями и устанавливал кухни премиальных марок",
+    brands: [
+      {
+        name: "Nobilia",
+        desc: "Одна из крупнейших немецких фабрик кухонной мебели. Вячеслав прошёл профессиональную подготовку по монтажу и установил десятки кухонь этой марки через магазины-партнёры в Германии.",
+      },
+      {
+        name: "Express Küchen",
+        desc: "Немецкий бренд доступных и функциональных кухонь. Установка через крупные торговые сети позволила Вячеславу накопить богатый опыт работы с различными конфигурациями и планировками.",
+      },
+      {
+        name: "IKEA",
+        desc: "В рамках деятельности компании <strong>Mööbli Esteet</strong> в Эстонии Вячеслав специализируется на профессиональной сборке и установке кухонь IKEA — с гарантированным качеством и аккуратностью.",
+      },
     ],
   },
 
@@ -95,6 +127,22 @@ export const dictionaries = {
       { icon: "layout-grid", title: "Design", desc: "3D planning and design approval tailored to the client's wishes" },
       { icon: "armchair", title: "Installation", desc: "Professional fitting with a quality guarantee and on-time delivery" },
     ],
+    brandsTitle: "Experience with European brands",
+    brandsSubtitle: "Viacheslav has partnered with leading German retail networks and installed kitchens from premium brands",
+    brands: [
+      {
+        name: "Nobilia",
+        desc: "One of Germany's largest kitchen furniture manufacturers. Viacheslav completed professional installation training and fitted dozens of Nobilia kitchens through partner stores across Germany.",
+      },
+      {
+        name: "Express Küchen",
+        desc: "A German brand of affordable, functional kitchens. Working through major retail chains gave Viacheslav extensive hands-on experience with a wide range of configurations and layouts.",
+      },
+      {
+        name: "IKEA",
+        desc: "Under the <strong>Mööbli Esteet</strong> brand in Estonia, Viacheslav specialises in the professional assembly and installation of IKEA kitchens — with guaranteed quality and precision.",
+      },
+    ],
   },
 
   est: {
@@ -126,6 +174,22 @@ export const dictionaries = {
       { icon: "ruler-measure", title: "Mõõtmised", desc: "Täpsed ruumimõõtmised kõigi eripärade ja kommunikatsioonide arvestusega" },
       { icon: "layout-grid", title: "Projekteerimine", desc: "3D-planeerimine ja disaini kooskõlastamine vastavalt kliendi soovile" },
       { icon: "armchair", title: "Paigaldus", desc: "Professionaalne paigaldus kvaliteedigarantiiga ja tähtaegade järgimisega" },
+    ],
+    brandsTitle: "Kogemus Euroopa brändidega",
+    brandsSubtitle: "Viacheslav on teinud koostööd juhtivate Saksa kaubanduskettidega ning paigaldanud premium-brändide köögimööblit",
+    brands: [
+      {
+        name: "Nobilia",
+        desc: "Üks Saksamaa suurimaid köögi­mööbli tootjaid. Viacheslav läbis professionaalse paigalduskoolituse ning paigaldas kümneid selle märgi köögimööblit partnerkaupluste kaudu Saksamaal.",
+      },
+      {
+        name: "Express Küchen",
+        desc: "Saksa bränd taskukohaste ja funktsionaalsete köökide jaoks. Suurte kaubanduskettide kaudu paigaldamine andis Viachelsvale rikkaliku kogemuse erinevate konfiguratsioonide ja planeeringutega.",
+      },
+      {
+        name: "IKEA",
+        desc: "Ettevõtte <strong>Mööbli Esteet</strong> raames Eestis spetsialiseerub Viacheslav IKEA köökide professionaalsele kokkupanekule ja paigaldamisele — garanteeritud kvaliteedi ja täpsusega.",
+      },
     ],
 
   },
@@ -160,5 +224,21 @@ export const dictionaries = {
       { icon: "layout-grid", title: "Diseño", desc: "Planificación 3D y aprobación del diseño adaptado a los deseos del cliente" },
       { icon: "armchair", title: "Instalación", desc: "Montaje profesional con garantía de calidad y cumplimiento de plazos" },
     ],
+    brandsTitle: "Experiencia con marcas europeas",
+    brandsSubtitle: "Viacheslav ha colaborado con las principales cadenas alemanas e instalado cocinas de marcas premium",
+    brands: [
+      {
+        name: "Nobilia",
+        desc: "Una de las fábricas de muebles de cocina más grandes de Alemania. Viacheslav completó formación profesional en montaje e instaló decenas de cocinas de esta marca a través de tiendas asociadas en Alemania.",
+      },
+      {
+        name: "Express Küchen",
+        desc: "Marca alemana de cocinas asequibles y funcionales. La instalación a través de grandes cadenas comerciales permitió a Viacheslav acumular una amplia experiencia con diversas configuraciones y distribuciones.",
+      },
+      {
+        name: "IKEA",
+        desc: "En el marco de la actividad de <strong>Mööbli Esteet</strong> en Estonia, Viacheslav se especializa en el montaje e instalación profesional de cocinas IKEA, con calidad garantizada y máxima precisión.",
+      },
+    ]
   },
 };

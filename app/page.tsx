@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useTheme } from 'next-themes';
-import { Sun, Moon, Phone, Drill, Ruler, PencilRuler, Wrench} from 'lucide-react';
+import { Sun, Moon, Phone, Drill, Ruler, PencilRuler, Wrench, X } from 'lucide-react';
 import { dictionaries, Locale } from './locales/dictionaries';
 
 export default function Home() {
@@ -24,10 +24,18 @@ export default function Home() {
     <Wrench size={26} />,
   ];
 
+  const BRAND_IMG = [
+    "/img/germany_kitchen.jpg",
+    "/img/germany_kitchen_2.jpg",
+    "/img/ikea.jpg",
+  ];
+
   return (
     <div className="bg-main min-h-screen flex flex-col transition-colors duration-300">
       <header className="flex sticky top-0 w-full z-50 header-glass transition-colors duration-300 header">
         <div className="h-16 flex items-center justify-around w-full">
+
+          {/* Logo */}
           <div className="flex items-center gap-2 font-bold text-xl">
             <span className="logo-text italic tracking-tighter flex items-center">
               <Drill />
@@ -35,8 +43,10 @@ export default function Home() {
             </span>
           </div>
 
+          {/* Header Actions */}
           <div className="flex items-center gap-4">
-            {/* Кнопка звонка */}
+
+            {/* Call Button */}
             <a
               href="tel:+37254887803"
               className="inline-flex items-center gap-4 p-2 bg-black text-white rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-lg shadow-black-500/30 font-bold"
@@ -50,8 +60,9 @@ export default function Home() {
               </div>
             </a>
 
+            {/* Change Language */}
             <div className="min-w-10 justify-center flex group relative py-2">
-              <span className="cursor-pointer font-bold uppercase transition-colors group-hover:text-black">
+              <span className="cursor-pointer font-bold uppercase transition-colors group-hover:underline">
                 {labels[lang]}
               </span>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
@@ -71,7 +82,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
+            
+            {/* Change Theme */}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="action-theme p-2 rounded-full theme-btn-hover"
@@ -230,6 +242,44 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="w-full max-w-5xl mx-auto px-6 py-12">
+
+          <h2 className="text-center text-3xl font-medium mb-2">
+            {cur.brandsTitle}
+          </h2>
+          <p className="text-center text-sm mb-10">
+            {cur.brandsSubtitle}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {cur.brands.map((brand, i) => (
+              <div key={i}>
+
+                <div
+                  className="rounded-2xl overflow-hidden aspect-[4/3] mb-4 cursor-zoom-in group"
+                  onClick={() => setSelectedDoc(BRAND_IMG[i])}
+                >
+                  <img
+                    src={BRAND_IMG[i]}
+                    alt={brand.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                <p className="text-[16px] font-medium  mb-1">
+                  {brand.name}
+                </p>
+                <p
+                  className="text-[14px]  leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: brand.desc }}
+                />
+
+              </div>
+            ))}
+          </div>
+
+        </div>
+
 
       </main>
 
@@ -254,6 +304,30 @@ export default function Home() {
           </ul>
         </div>
       </footer>
+
+      {/* Модальное окно */}
+      {selectedDoc && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fadeIn duration-300"
+          onClick={() => setSelectedDoc(null)} // Закрытие при клике на фон
+        >
+          <div className="relative max-w-4xl w-full h-full flex items-center justify-center">
+            <button
+              className="absolute top-0 right-0 m-4 text-white transition-colors z-[110]"
+              onClick={() => setSelectedDoc(null)}
+            >
+              <X size={40} className="cursor-pointer" /> {/* Крестик из иконки */}
+            </button>
+
+            <img
+              src={selectedDoc}
+              alt="Document Fullsize"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoomIn duration-300"
+              onClick={(e) => e.stopPropagation()} // Чтобы клик по картинке не закрывал окно
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
