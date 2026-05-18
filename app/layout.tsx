@@ -10,6 +10,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Furniture Aesthete — Установка кухонь",
   description: "Профессиональная сборка и установка кухонь любой сложности",
+
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml", // Это заставит браузер читать SVG
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

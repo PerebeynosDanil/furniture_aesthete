@@ -2,6 +2,7 @@
 
 import { useApp } from './providers'; 
 import { Drill } from 'lucide-react';
+import Logo from './components/Logo';
 
 export default function Footer() {
   const { cur, lang, setLang, labels } = useApp();
@@ -19,7 +20,7 @@ export default function Footer() {
           {/* Logo/Desc */}
           <div>
             <div className="logo-text text-white italic flex items-center gap-1.5 font-bold mb-3">
-              <Drill size={20} />
+            <Logo />
               {cur.logo}
             </div>
             <p className="text-[16px] text-gray-400 leading-relaxed mb-5 max-w-[260px]">
