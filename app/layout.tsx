@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from './providers';
 import Header from './Header';
 import Footer from './Footer';
+import AppFeatures from './AppFeatures';
 import { ThemeProvider } from 'next-themes';
 import "./globals.css";
+
 
 export const metadata: Metadata = {
   title: "Furniture Aesthete — Установка кухонь",
@@ -32,9 +33,12 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white dark:bg-[var(--bg-main)]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Providers>
+
             <Header />
             {children}
             <Footer />
+            <AppFeatures />
+
           </Providers>
         </ThemeProvider>
       </body>

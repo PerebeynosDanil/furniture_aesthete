@@ -116,6 +116,9 @@ export const dictionaries = {
       { title: "6. Застосовне право", text: "Ці умови регулюються законодавством Естонської Республіки. Усі спори вирішуються в судовому порядку за місцем знаходження компанії." },
       { title: "7. Зміна умов", text: "Ми залишаємо за собою право вносити зміни в ці умови в будь-який час. Актуальна версія завжди доступна на цій сторінці." },
     ],
+    portfolioTitle: "Портфоліо робіт",
+    portfolioSubtitle: "Реалізовані проекти — від невеликих кухонь до комерційних інтер'єрів",
+    portfolioLoadMore: "Завантажити ще",
   },
 
   // RUSSIAN LANG
@@ -276,6 +279,9 @@ export const dictionaries = {
         text: "Мы оставляем за собой право вносить изменения в настоящие условия в любое время. Актуальная версия всегда доступна на этой странице. Продолжение использования сайта после изменений означает ваше согласие с новыми условиями.",
       },
     ],
+    portfolioTitle: "Портфолио работ",
+    portfolioSubtitle: "Реализованные проекты — от небольших кухонь до коммерческих интерьеров",
+    portfolioLoadMore: "Загрузить ещё",
   },
 
   // English LANG
@@ -392,6 +398,9 @@ export const dictionaries = {
       { title: "6. Governing law", text: "These terms are governed by the laws of the Republic of Estonia. All disputes shall be resolved in courts at the company's place of registration." },
       { title: "7. Changes to terms", text: "We reserve the right to update these terms at any time. The current version is always available on this page. Continued use of the website after changes constitutes acceptance of the updated terms." },
     ],
+    portfolioTitle: "Portfolio",
+    portfolioSubtitle: "Completed projects — from cosy home kitchens to large commercial interiors",
+    portfolioLoadMore: "Load more",
   },
 
   // Estonian LANG
@@ -508,6 +517,9 @@ export const dictionaries = {
       { title: "6. Kohaldatav õigus", text: "Käesolevaid tingimusi reguleerib Eesti Vabariigi seadusandlus. Kõik vaidlused lahendatakse kohtus ettevõtte registreerimiskoha järgi." },
       { title: "7. Tingimuste muutmine", text: "Jätame endale õiguse tingimusi igal ajal muuta. Kehtiv versioon on alati sellel lehel saadaval. Veebisaidi jätkuv kasutamine pärast muudatusi tähendab uute tingimustega nõustumist." },
     ],
+    portfolioTitle: "Portfoolio",
+    portfolioSubtitle: "Teostatud projektid — väikestest kodukööki­dest kuni suurte äriruumideni",
+    portfolioLoadMore: "Laadi rohkem",
   },
 
   // Espanola LANG
@@ -624,5 +636,8 @@ export const dictionaries = {
       { title: "6. Legislación aplicable", text: "Estos términos se rigen por la legislación de la República de Estonia. Todas las disputas se resolverán ante los tribunales del lugar de registro de la empresa." },
       { title: "7. Cambios en los términos", text: "Nos reservamos el derecho de actualizar estos términos en cualquier momento. La versión actual siempre está disponible en esta página. El uso continuado del sitio después de los cambios implica la aceptación de los nuevos términos." },
     ],
+    portfolioTitle: "Portafolio",
+    portfolioSubtitle: "Proyectos realizados — desde acogedoras cocinas domésticas hasta grandes interiores comerciales",
+    portfolioLoadMore: "Cargar más",
   }
 };

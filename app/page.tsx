@@ -12,14 +12,6 @@ export default function Home() {
   const ESTEET_ICONS = [<House size={18} />, <Building2 size={18} />, <Wrench size={18} />, <Package size={18} />];
   const CTA_ICONS = [<Ruler size={18} />, <Palette size={18} />, <ShieldCheck size={18} />];
 
-  const CONTACTS = [
-    { label: 'Телефон', href: 'tel:+37254887803', icon: <Phone size={20} />, bg: 'bg-gray-900 dark:bg-white text-white dark:text-gray-900' },
-    { label: 'Telegram', href: 'https://t.me/bushinkan88', icon: <i className="fa-brands fa-telegram text-xl" />, bg: 'bg-[#229ED9] text-white' },
-    { label: 'Viber', href: 'viber://chat?number=%2B380976987712', icon: <i className="fa-brands fa-viber text-xl" />, bg: 'bg-[#7360F2] text-white' },
-    { label: 'WhatsApp', href: 'https://wa.me/+380976987712', icon: <i className="fa-brands fa-whatsapp text-xl" />, bg: 'bg-[#25D366] text-white' },
-    { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61585162651542', icon: <i className="fa-brands fa-facebook-f text-xl" />, bg: 'bg-[#1877F2] text-white' },
-  ];
-
   const TIKTOK_VIDEO_ID = '7593793699730033942';
   const TIKTOK_USERNAME = '@esteta_de_muebles';
   const TIKTOK_PROFILE_URL = 'https://www.tiktok.com/@esteta_de_muebles';
@@ -30,7 +22,7 @@ export default function Home() {
       <main className="flex-grow flex flex-col items-center w-full">
         {/* ── BANNER ── */}
         <div className="banner relative w-full overflow-hidden shadow-2xl">
-          <img src="/img/banner.jpg" className="w-full object-cover h-[24em]" />
+          <img src="/img/banner.jpg" className="w-full object-cover h-[26em]" />
           <div className="banner-overlay">
             <div className="presentation-author flex flex-col md:flex-row justify-center items-center h-full w-full px-2 gap-4 md:gap-10 py-2 md:py-0">
               <img src="/img/author-photo.jpg" className="object-cover w-32 h-32 md:w-auto md:h-auto rounded-full md:rounded-none" />
@@ -43,7 +35,7 @@ export default function Home() {
                   <button onClick={() => setContactOpen(true)} className="cursor-pointer px-5 py-3 md:px-8 md:py-4 bg-[var(--bg-action)] text-[var(--text-action)] font-bold rounded-xl hover:bg-slate-700 transition-all shadow-lg active:scale-95 text-sm md:text-base">
                     {cur.measurement}
                   </button>
-                  <a href="#" className="flex px-5 py-3 md:px-8 md:py-4 bg-[var(--bg-action)] text-[var(--text-action)] font-bold rounded-xl hover:bg-slate-700 transition-all shadow-lg active:scale-95 text-sm md:text-base">
+                  <a href="/portfolio" className="flex px-5 py-3 md:px-8 md:py-4 bg-[var(--bg-action)] text-[var(--text-action)] font-bold rounded-xl hover:bg-slate-700 transition-all shadow-lg active:scale-95 text-sm md:text-base">
                     {cur.viewWorks}
                   </a>
                 </div>
@@ -220,35 +212,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      {/* ── PHOTO MODAL ── */}
-      {selectedDoc && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={() => setSelectedDoc(null)}>
-          <div className="relative max-w-4xl w-full h-full flex items-center justify-center">
-            <button className="absolute top-0 right-0 m-4 text-white z-[110]" onClick={() => setSelectedDoc(null)}>
-              <X size={36} className="cursor-pointer" />
-            </button>
-            <img src={selectedDoc} alt="" className="max-w-full max-h-full object-contain rounded-lg shadow-2xl" onClick={(e) => e.stopPropagation()} />
-          </div>
-        </div>
-      )}
-
-      {/* ── CONTACTS MODAL ── */}
-      {contactOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={() => setContactOpen(false)}>
-          <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 md:p-8 w-full max-w-sm flex flex-col gap-3 shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <h3 className="text-lg md:text-xl font-medium text-white text-center mb-2">{cur.ctaModalTitle}</h3>
-            {CONTACTS.map((c) => (
-              <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" className={`flex items-center gap-4 px-5 py-3 rounded-2xl font-medium text-[16px] hover:opacity-85 transition-opacity ${c.bg}`}>
-                <span className="w-6 flex justify-center">{c.icon}</span>{c.label}
-              </a>
-            ))}
-            <button onClick={() => setContactOpen(false)} className="mt-2 text-sm text-gray-400 cursor-pointer hover:text-gray-200 transition-colors text-center">
-              {cur.ctaModalClose}
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

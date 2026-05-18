@@ -57,13 +57,13 @@ export default function Header() {
 
         {/* Mobile actions */}
         <div className="flex md:hidden items-center gap-2">
-          <button onClick={() => setContactOpen(true)} className="p-2 rounded-xl border border-current opacity-70 hover:opacity-100 transition-opacity">
+          <button onClick={() => setContactOpen(true)} className="p-2 rounded-xl border cursor-pointer border-current opacity-70 hover:opacity-100 transition-opacity">
             <Phone size={18} />
           </button>
           <button onClick={handleThemeToggle} className="action-theme p-2 rounded-full">
             {isDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded-xl hover:opacity-70 transition-opacity">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded-xl cursor-pointer hover:opacity-70 transition-opacity">
             <Menu size={22} />
           </button>
         </div>
@@ -88,6 +88,7 @@ export default function Header() {
                       e.stopPropagation();
                       setLang(l);
                       setIsLangOpen(false);
+                      setMenuOpen(false);
                     }}
                     className={`p-4 cursor-pointer border-b last:border-b-0 uppercase text-sm hover:underline ${lang === l ? 'font-bold' : 'opacity-60 font-medium'}`}
                   >
