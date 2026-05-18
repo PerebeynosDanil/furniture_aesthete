@@ -1,10 +1,9 @@
 'use client';
 
-import { useApp } from './providers'; // Импортируем наш кастомный хук из провайдеров
+import { useApp } from './providers'; 
 import { Drill } from 'lucide-react';
 
 export default function Footer() {
-  // Достаем из глобального состояния всё, что нужно футеру
   const { cur, lang, setLang, labels } = useApp();
 
   const FOOTER_LINKS = [
@@ -15,20 +14,19 @@ export default function Footer() {
     <footer className="w-full bg-[#1b1b1b] border-t border-gray-800">
       <div className="max-w-5xl mx-auto px-4 md:px-6 pt-10 pb-4">
 
-        {/* Верхняя сетка */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 justify-self-center sm:grid-cols-3 md:grid-cols-3 gap-4 mb-10">
           
-          {/* Колонка 1 — Логотип, описание и соцсети */}
+          {/* Logo/Desc */}
           <div>
-            <div className="logo-text text-white italic flex items-center gap-1.5 font-bold text-lg mb-3">
+            <div className="logo-text text-white italic flex items-center gap-1.5 font-bold mb-3">
               <Drill size={20} />
               {cur.logo}
             </div>
-            <p className="text-[13px] text-gray-400 leading-relaxed mb-5 max-w-[260px]">
+            <p className="text-[16px] text-gray-400 leading-relaxed mb-5 max-w-[260px]">
               {cur.footerDesc}
             </p>
 
-            {/* Соцсети */}
+            {/* Networks */}
             <div className="flex gap-2.5">
               {[
                 { href: 'https://www.facebook.com/profile.php?id=61585162651542', icon: 'fa-facebook-f', color: '#1877F2' },
@@ -43,7 +41,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ '--hover-color': s.color } as React.CSSProperties}
-                  className="footer-social w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 text-[15px] hover:text-white transition-all duration-300"
+                  className="footer-social w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 text-xl text-white transition-all duration-300"
                 >
                   <i className={`fa-brands ${s.icon}`} />
                 </a>
@@ -51,9 +49,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Колонка 2 — Навигация */}
+          {/* Navigation */}
           <div>
-            <p className="text-[12px] font-medium uppercase tracking-widest text-gray-500 mb-4">
+            <p className="text-[14px] font-medium uppercase tracking-widest text-gray-500 mb-4">
               {cur.footerNav}
             </p>
             <div className="flex flex-col gap-2.5">
@@ -65,9 +63,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Колонка 3 — Legal + Переключатель языков */}
+          {/* Legal + Lang Change */}
           <div>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-gray-500 mb-4">
+            <p className="text-[14px] font-medium uppercase tracking-widest text-gray-500 mb-4">
               {cur.footerLegal}
             </p>
             <div className="flex flex-col gap-2.5 mb-6">
@@ -79,7 +77,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <p className="text-[11px] font-medium uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">
+            <p className="text-[12px] font-medium uppercase tracking-widest text-gray-300 mb-3">
               {cur.footerLangLabel}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -87,10 +85,10 @@ export default function Footer() {
                 <button
                   key={l}
                   onClick={() => setLang(l)}
-                  className={`text-[11px] px-2.5 py-1 rounded-lg border transition-all cursor-pointer uppercase font-medium ${
+                  className={`text-[12px] px-2.5 py-1 rounded-lg border transition-all cursor-pointer uppercase font-medium ${
                     lang === l
-                      ? 'border-gray-900 dark:border-white text-gray-900 dark:text-white'
-                      : 'border-gray-200 dark:border-gray-700 text-gray-400 dark:text-gray-500 hover:border-gray-400 dark:hover:border-gray-500'
+                      ? 'border-white text-white'
+                      : 'border-gray-700 text-gray-500 hover:border-gray-500'
                   }`}
                 >
                   {labels[l]}
@@ -102,7 +100,7 @@ export default function Footer() {
         </div>
 
         {/* Копирайт */}
-        <div className="border-t border-gray-200 dark:border-gray-800 py-4 flex flex-col items-center justify-center gap-2 text-[12px] text-gray-400 dark:text-gray-600">
+        <div className="border-t border-gray-800 py-4 flex flex-col items-center justify-center gap-2 text-[12px] text-gray-400">
           <span>© 2026 FurnitureAesthete. All rights reserved.</span>
         </div>
 

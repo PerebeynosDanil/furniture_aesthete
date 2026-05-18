@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Providers } from './providers';
 import Header from './Header';
 import Footer from './Footer';
-import AppFeatures from './AppFeatures';
+import AppFeatures from './components/AppFeatures';
 import { ThemeProvider } from 'next-themes';
 import "./globals.css";
 

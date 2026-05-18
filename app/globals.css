@@ -4,7 +4,7 @@
 :root {
   --bg-main: #d8d4d49c;
   --bg-second: #fff;
-  --bg-overlay: #ffffffd9;
+  --bg-overlay: rgba(255, 255, 255, 0.85);
   --bg-action: #1b1b1b;
   --text-action: #fff;
   --text-main: #0f172a;
@@ -16,7 +16,7 @@
 :root.dark {
   --bg-main: #2a2a2a;
   --bg-second: #1b1b1b;
-  --bg-overlay: #000000d9;
+  --bg-overlay: rgba(0, 0, 0, 0.85);
   --bg-action: #fff;
   --text-action: #1b1b1b;
   --text-main: #f8fafc;
@@ -43,7 +43,7 @@ body {
 }
 
 .logo-text {
-  font-size: larger;
+  font-size: 18px;
 }
 
 .action-lang {

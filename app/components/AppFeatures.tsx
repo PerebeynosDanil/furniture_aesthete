@@ -1,7 +1,8 @@
 'use client';
 
-import { useApp } from './providers';
+import { useApp } from '../providers';
 import { X, Phone, MessageCircle, Send } from 'lucide-react';
+import {  useEffect } from 'react';
 
 export default function AppFeatures() {
   const { 
@@ -9,6 +10,18 @@ export default function AppFeatures() {
     contactOpen, setContactOpen, 
     cur 
   } = useApp();
+
+  useEffect(() => {
+    if (contactOpen || selectedDoc) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [contactOpen, selectedDoc]);
 
   // Массив контактов с цветами брендов
   const CONTACTS = [
@@ -27,9 +40,9 @@ export default function AppFeatures() {
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-md p-4 animate-fade-in" 
           onClick={() => setSelectedDoc(null)}
         >
-          <div className="relative max-w-4xl w-full h-full flex items-center justify-center">
+          <div className="relative w-full h-full flex items-center justify-center">
             <button 
-              className="absolute top-4 right-4 text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-full transition-all cursor-pointer z-[110]" 
+              className="absolute top-2 right-70 text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-full transition-all cursor-pointer z-[110]" 
               onClick={() => setSelectedDoc(null)}
             >
               <X size={28} />
