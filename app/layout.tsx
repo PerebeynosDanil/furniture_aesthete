@@ -9,16 +9,94 @@ import { Analytics } from "@vercel/analytics/next"
 
 
 export const metadata: Metadata = {
-  title: "Furniture Aesthete — Установка кухонь",
-  description: "Профессиональная сборка и установка кухонь любой сложности",
-
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-        type: "image/svg+xml", // Это заставит браузер читать SVG
-      },
-    ],
+  // ── Основные ───────────────────────────────────────────────────────────────
+  title: {
+    default: "Furniture Aesthete | Установка кухонь в Эстонии и Европе",
+    template: "%s | Furniture Aesthete",
+  },
+  description:
+    "Профессиональная установка и сборка кухонь в Эстонии и по всей Европе. Вячеслав Бухенко — 20 лет опыта, бренды Nobilia, IKEA, Express Küchen. Бесплатный замер.",
+ 
+  // ── Ключевые слова ──────────────────────────────────────────────────────────
+  keywords: [
+    // RU
+    "установка кухонь Эстония",
+    "сборка кухни Таллин",
+    "монтаж кухни Европа",
+    "установка IKEA кухни",
+    "сборка мебели Таллин",
+    "кухни под заказ Эстония",
+    "мастер по установке кухонь",
+    "Nobilia установка",
+    "Express Küchen монтаж",
+    "Mööbli Esteet",
+    // ET
+    "köögimööbli paigaldus Tallinn",
+    "köögimööbli kokkupanek Eesti",
+    "IKEA köögi paigaldus",
+    "mööbli paigaldus Tallinn",
+    "köögimööbel Euroopa",
+    // EN
+    "kitchen installation Estonia",
+    "kitchen assembly Tallinn",
+    "IKEA kitchen installation Europe",
+    "professional kitchen fitter Estonia",
+    "kitchen installation Nobilia",
+    "furniture assembly Tallinn",
+    // DE
+    "Küchenaufbau Estland",
+    "Küchenmontage Tallinn",
+    // ES
+    "instalación cocinas Estonia",
+    "montaje cocinas Europa",
+  ],
+ 
+  // ── Авторство ───────────────────────────────────────────────────────────────
+  authors: [{ name: "Viacheslav Bukhenko", url: "https://furnitureaesthete.vercel.app/" }],
+  creator: "Viacheslav Bukhenko",
+  publisher: "Mööbli Esteet OÜ",
+ 
+  // ── Canonical ───────────────────────────────────────────────────────────────
+  alternates: {
+    canonical: "https://furnitureaesthete.vercel.app/",
+    languages: {
+      "ru": "https://furnitureaesthete.vercel.app",
+      "et": "https://furnitureaesthete.vercel.app",
+      "en": "https://furnitureaesthete.vercel.app",
+      "es": "https://furnitureaesthete.vercel.app",
+      "uk": "https://furnitureaesthete.vercel.app",
+    },
+  },
+ 
+  // ── Open Graph (Facebook, Telegram, WhatsApp) ───────────────────────────────
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    alternateLocale: ["et_EE", "en_US", "es_ES", "uk_UA"],
+    url: "https://furnitureaesthete.vercel.app",
+    siteName: "Furniture Aesthete",
+    title: "Furniture Aesthete | Установка кухонь в Эстонии и Европе",
+    description:
+      "Профессиональная установка кухонь. 20 лет опыта. Работаем по всей Европе. Бесплатный замер.",
+  
+  },
+ 
+  // ── Robots ──────────────────────────────────────────────────────────────────
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+ 
+  // ── Верификация ─────────────────────────────────────────────────────────────
+  // Добавь свои коды после регистрации в Google Search Console и Yandex
+  verification: {
+    google: "ВСТАВЬ_GOOGLE_VERIFICATION_CODE",
   },
 };
 
