@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description:
     "Профессиональная установка и сборка кухонь в Эстонии и по всей Европе. Вячеслав Бухенко — 20 лет опыта, бренды Nobilia, IKEA, Express Küchen. Бесплатный замер.",
- 
+
   // ── Ключевые слова ──────────────────────────────────────────────────────────
   keywords: [
     // RU
@@ -50,12 +50,12 @@ export const metadata: Metadata = {
     "instalación cocinas Estonia",
     "montaje cocinas Europa",
   ],
- 
+
   // ── Авторство ───────────────────────────────────────────────────────────────
   authors: [{ name: "Viacheslav Bukhenko", url: "https://furnitureaesthete.vercel.app/" }],
   creator: "Viacheslav Bukhenko",
   publisher: "Mööbli Esteet OÜ",
- 
+
   // ── Canonical ───────────────────────────────────────────────────────────────
   alternates: {
     canonical: "https://furnitureaesthete.vercel.app/",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "uk": "https://furnitureaesthete.vercel.app",
     },
   },
- 
+
   // ── Open Graph (Facebook, Telegram, WhatsApp) ───────────────────────────────
   openGraph: {
     type: "website",
@@ -78,9 +78,9 @@ export const metadata: Metadata = {
     title: "Furniture Aesthete | Установка кухонь в Эстонии и Европе",
     description:
       "Профессиональная установка кухонь. 20 лет опыта. Работаем по всей Европе. Бесплатный замер.",
-  
+
   },
- 
+
   // ── Robots ──────────────────────────────────────────────────────────────────
   robots: {
     index: true,
@@ -92,11 +92,21 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
- 
+
+  // ── Иконки ──────────────────────────────────────────────────────────────────
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml", 
+      },
+    ],
+  },
+
   // ── Верификация ─────────────────────────────────────────────────────────────
-  // Добавь свои коды после регистрации в Google Search Console и Yandex
+  // Добавь свои коды после регистрации в Google Search Console
   verification: {
-    google: "ВСТАВЬ_GOOGLE_VERIFICATION_CODE",
+    google: "google99e3cdf152b9e844.html",
   },
 };
 
