@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   // ── Авторство ───────────────────────────────────────────────────────────────
   authors: [{ name: "Viacheslav Bukhenko", url: "https://furnitureaesthete.vercel.app/" }],
   creator: "Viacheslav Bukhenko",
-  publisher: "Mööbli Esteet OÜ",
+  publisher: "Furniture Aesthete",
 
   // ── Canonical ───────────────────────────────────────────────────────────────
   alternates: {
@@ -68,19 +68,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // ── Open Graph (Facebook, Telegram, WhatsApp) ───────────────────────────────
-  openGraph: {
-    type: "website",
-    locale: "ru_RU",
-    alternateLocale: ["et_EE", "en_US", "es_ES", "uk_UA"],
-    url: "https://furnitureaesthete.vercel.app",
-    siteName: "Furniture Aesthete",
-    title: "Furniture Aesthete | Установка кухонь в Эстонии и Европе",
-    description:
-      "Профессиональная установка кухонь. 20 лет опыта. Работаем по всей Европе. Бесплатный замер.",
-
-  },
-
   // ── Robots ──────────────────────────────────────────────────────────────────
   robots: {
     index: true,
@@ -88,8 +75,6 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
     },
   },
 
@@ -101,12 +86,6 @@ export const metadata: Metadata = {
         type: "image/svg+xml", 
       },
     ],
-  },
-
-  // ── Верификация ─────────────────────────────────────────────────────────────
-  // Добавь свои коды после регистрации в Google Search Console
-  verification: {
-    google: "google99e3cdf152b9e844.html",
   },
 };
 
