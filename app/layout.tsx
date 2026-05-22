@@ -127,6 +127,7 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           crossOrigin="anonymous"
         />
+        <meta name="google-site-verification" content="jDes7P7V53s-Pgz7UTwiC3FdFkGXZfjxCIA5v2ldO6w" />
       </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-[var(--bg-main)]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
